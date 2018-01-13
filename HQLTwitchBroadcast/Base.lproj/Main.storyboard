@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxG-C8-kmK">
+                                <rect key="frame" x="151.5" y="318.5" width="71" height="30"/>
+                                <state key="normal" title="authToken"/>
+                                <connections>
+                                    <action selector="open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGE-Jw-tTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Np7-d6-lQn">
+                                <rect key="frame" x="142.5" y="368.5" width="89" height="30"/>
+                                <state key="normal" title="refreshToken"/>
+                                <connections>
+                                    <action selector="refreshToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCS-Br-tOy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0or-UP-G8n">
+                                <rect key="frame" x="144.5" y="418.5" width="85" height="30"/>
+                                <state key="normal" title="revokeToken"/>
+                                <connections>
+                                    <action selector="revokeToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zB-kS-23F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGA-FP-qn7">
+                                <rect key="frame" x="159" y="269" width="56" height="30"/>
+                                <state key="normal" title="userInfo"/>
+                                <connections>
+                                    <action selector="userInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtB-C0-Eua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-c2-AeL">
+                                <rect key="frame" x="138.5" y="219" width="98" height="30"/>
+                                <state key="normal" title="broadcastURL"/>
+                                <connections>
+                                    <action selector="broadcastURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5DS-HN-iJw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZO-TO-Ing">
+                                <rect key="frame" x="141" y="169" width="92" height="30"/>
+                                <state key="normal" title="updateStatus"/>
+                                <connections>
+                                    <action selector="updateStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QiH-Xt-3Qu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjI-MB-dts">
+                                <rect key="frame" x="134" y="468.5" width="106" height="30"/>
+                                <state key="normal" title="connectToSock"/>
+                                <connections>
+                                    <action selector="connectToSocket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pme-hm-m1S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Np7-d6-lQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4pm-ln-Mko"/>
+                            <constraint firstItem="vxG-C8-kmK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Nw-zP-QJ1"/>
+                            <constraint firstItem="PjI-MB-dts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CP6-Ty-0eB"/>
+                            <constraint firstItem="vxG-C8-kmK" firstAttribute="top" secondItem="KGA-FP-qn7" secondAttribute="bottom" constant="20" id="MQm-Fn-JuW"/>
+                            <constraint firstItem="KGA-FP-qn7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U5E-R8-nGy"/>
+                            <constraint firstItem="8sU-c2-AeL" firstAttribute="top" secondItem="IZO-TO-Ing" secondAttribute="bottom" constant="20" id="VPV-3H-LdS"/>
+                            <constraint firstItem="0or-UP-G8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apH-om-wXG"/>
+                            <constraint firstItem="8sU-c2-AeL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d18-Ua-2ck"/>
+                            <constraint firstItem="IZO-TO-Ing" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3P-in-Obd"/>
+                            <constraint firstItem="Np7-d6-lQn" firstAttribute="top" secondItem="vxG-C8-kmK" secondAttribute="bottom" constant="20" id="fDE-Xz-c70"/>
+                            <constraint firstItem="PjI-MB-dts" firstAttribute="top" secondItem="0or-UP-G8n" secondAttribute="bottom" constant="20" id="g4g-bl-Cp7"/>
+                            <constraint firstItem="0or-UP-G8n" firstAttribute="top" secondItem="Np7-d6-lQn" secondAttribute="bottom" constant="20" id="hMH-fs-dnV"/>
+                            <constraint firstItem="KGA-FP-qn7" firstAttribute="top" secondItem="8sU-c2-AeL" secondAttribute="bottom" constant="20" id="iQT-TH-Kek"/>
+                            <constraint firstItem="vxG-C8-kmK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mS2-Cu-TeS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
